@@ -150,6 +150,7 @@ nav{
     max-width: 400px;
     border: 1px solid var(--lightgrey);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .sky__border,
