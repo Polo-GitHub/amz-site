@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="./images/amz-fvc-img.png" type="image/x-icon">
+    <title>Amazon Sign-In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./script/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img src="./images/amz-logo.png" alt="" class="nav__logo">
+        </nav>
+
+        <div class="container">
+            <form action="#" class="amz__form">
+                <div class="firstlogin__login active__page">
+                    <div class="error__container">
+                        <div class="error__message-container">
+                            <h3>There was a problem</h3>
+                            <p>Enter your email or mobile phone number</p>
+                        </div>
+                    </div>
+                    <div class="email__numbererror-container">
+                        <div class="email__message-container">
+                            <h3>No account found with email address or phone number</h3>
+                            <p>Please enter a valid email address or click Create Account if you are new to Amazon.</p>
+                        </div>
+                    </div>
+                    <div class="amz__input-container">
+                        <h1 class="amz__heading">Welcome</h1>
+                        <div class="amz__input-wrapper">
+                            <div class="amz__acct">
+                                <div class="amz__create create-acct">
+                                    <img src="./images/amz-round-img.png" alt="" class="grey__border">
+                                    <p>Create account <span>New to Amazon?</span></p>
+                                </div>
+                                <div class="amz__create sign-acct">
+                                    <img src="./images/amz-round-img-am.png" alt="" class="sky__border">
+                                    <p>Sign in Already a customer?</p>
+                                </div>
+                            </div>
+                            <div class="amz__input">
+                                <label for="email">Email or phone number</label>
+                                <input type="text" class="emailinput" id="email">
+                                <button type="button" class="next-btn">countinue</button>
+                            </div>
+                            <div class="amz__links">
+                                <p class="amz__policy">By continuing, you agree to Amazon's <a href="#">condition of
+                                        use</a> and <a href="#">Privacy Notice.</a></p>
+                                <div class="amz__icon-link">
+                                    <i class="fa-sharp fa-solid fa-angle-down"></i>
+                                    <a href="#">Need help?</a>
+                                </div>
+                            </div>
+                            <div class="amz__work-shop">
+                                <p>Buying for work?</p>
+                                <a href="#">Shop on Amazon Business</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second login page -->
+                <div class="secondform__login">
+                    <div class="second__passworderror-container">
+                        <div class="error-emptypassword">
+                            <h3>There was a problem</h3>
+                            <p>Enter your password</p>
+                        </div>
+                    </div>
+                    <div class="incorrectpassword__error-container">
+                        <div class="error-incorrectpassword">
+                            <h3>There was a problem</h3>
+                            <p>Your password is incorrect</p>
+                        </div>
+                    </div>
+                    <h1 class="secondform__heading">
+                        Sign in
+                    </h1>
+                    <div class="amz__userdetail">
+                        <p class="amz__usermail"></p>
+                        <button type="button" class="changepage__btn">Change</button>
+                    </div>
+                    <div class="amz__input-password">
+                        <label for="pass">Amazon password</label>
+                        <input type="password" class="inputpassword" name="" id="pass">
+                    </div>
+                    <div class="amz__show-forgot-password">
+                        <div class="amz__showpass">
+                            <input type="checkbox" class="amz__show" id="show">
+                            <label for="show">Show password</label>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="login__btn">Sign in</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="language__state">
+                <a href="" class="language">
+                    <img src="./images/amz-global-img.png" alt="" class="icon__global">
+                    <p class="lang__text">English</p>
+                </a>
+                <a href="" class="state">
+                    <img src="./images/amz-u-s-logo.png" alt="" class="icon__us">
+                    <p class="lang__text">United State</p>
+                </a>
+            </div>
+            <small class="footer__links" >
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Consumer Health Data Privacy Disclosure</a>
+                <div class="footer__side-wrap">
+                    <a href="#"> Your Ads Privacy Choices </a>
+                <img src="./images/amz-check-mark.png" alt="" class="mark-x">
+                </div>
+            </small>
+
+            <!-- <ul>
+                <small>
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Consumer Health Data Privacy Disclosure</a>
+                    <a href="#"> Your Ads Privacy Choices </a>
+                    <img src="./images/amz-check-mark.png" alt="" class="mark-x">
+                </small>
+            </ul> -->
+            <div class="copyright">
+                <small> © 1996-2025, Amazon.com, Inc. or its affiliates</small>
+            </div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
