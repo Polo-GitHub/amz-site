@@ -239,6 +239,7 @@ nav{
 .next-btn {
     width: 100%;
     background-color: var(--btn-color);
+    color: var(--text-color);
     padding: 0.7rem 0.5rem;
     border-radius: 50px;
     font-family: font-2;
@@ -247,6 +248,8 @@ nav{
 }
 
 .next-btn:focus,.login__btn:focus {
+    -webkit-appearance: none;
+    -webkit-border-radius: 10px;
     outline-color: var(--link-color);
     outline-width: 0.3rem;
     outline-style: solid;
@@ -254,6 +257,7 @@ nav{
     box-shadow: none;
     border-radius: 10px;
     transition: none;
+    border: 0.3rem solid var(--link-color);
 }
 .amz__links{
     display: flex;
@@ -308,7 +312,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 1rem;
     margin: 0 auto;
     width: 100%;
     max-width: 500px;
@@ -456,6 +460,7 @@ footer{
 .login__btn{
     width: 100%;
     background-color: var(--btn-color);
+    color: var(--text-color);
     padding: 0.7rem 0.5rem;
     border-radius: 50px;
     font-family: font-2;
@@ -472,13 +477,15 @@ input[type="checkbox"]{
     border-radius: 5px;
     display: inline;
     position: relative;
+    transition: none;
 }
 input[type="checkbox"]:checked{
     background-color: var(--link-color);
     border-color: var(--link-color);
+    transition: none;
     
 }
-input[type="checkbox"]:checked::after{
+input[type="checkbox"]:checked::before{
     content: "\f00c";
     font-family: "Font Awesome 6 Free";
     font-weight: 900; 
@@ -488,6 +495,7 @@ input[type="checkbox"]:checked::after{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    transition: none;
 }
 /* media queries..... */
 @media(max-width:320px){
