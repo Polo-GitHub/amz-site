@@ -249,8 +249,7 @@ nav{
 }
 
 .next-btn:focus,.login__btn:focus {
-    -webkit-appearance: none;
-    -webkit-border-radius: 10px;
+    appearance: none;
     outline-color: var(--link-color);
     outline-width: 0.3rem;
     outline-style: solid;
@@ -258,7 +257,6 @@ nav{
     box-shadow: none;
     border-radius: 10px;
     transition: none;
-    border: 0.3rem solid var(--link-color);
 }
 .amz__links{
     display: flex;
@@ -316,7 +314,6 @@ footer{
     padding: 1.5rem 1rem;
     margin: 0 auto;
     width: 100%;
-    max-width: 500px;
 }
 
 .language__state{
