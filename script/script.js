@@ -15,6 +15,9 @@ const previousText = _$(".amz__usermail");
 const inputEmailNumberError = _$(".email__numbererror-container");
 const switchToFirstLogin = _$(".changepage__btn"); 
 const signInBtn = _$(".login__btn");
+const year = _$(".year");
+
+year.innerHTML = new Date().getFullYear()
 
 function togglePassword(){
     if(passwordInput.type === "password" ){
