@@ -106,9 +106,7 @@ if(amzForm ){
             if(password.length < 8){
             showErrorMessage(passwordInput,incorrectPasswordError,"show__errormssg","error__border-color");
             }
-            else{
-                alert("welcome to the world spamimg...POLO G, FLASH, MOCO 🤣💻💵💲")
-            }
+        
         }
     });
 }
